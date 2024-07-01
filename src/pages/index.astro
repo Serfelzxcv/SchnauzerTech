@@ -1,0 +1,40 @@
+---
+import { HeroSlider1, HeroSlider3, opcion1, opcion2 } from "@static/images";
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+---
+
+<Layout
+    title="SchanauzerTech"
+    description="Desarrollo de Software - Paginas Web - Desarrollo Mobile"
+>
+    <main class="page-content">
+        <Hero
+            client:load
+            heroType="fullPageSlider"
+            data={[
+                {
+                    subtitle: "Schnauzer Tech",
+                    title: "Software",
+                    background: opcion1.src,
+                    paragraph:
+                        "Si estás buscando una agencia que te ayude a crear una presencia online notable, has llegado al lugar correcto. Podemos ayudarte a llevar tu negocio al siguiente nivel.",
+                    button: {
+                        text: "Información",
+                        link: "/infinite",
+                    },
+                },
+                {
+                    subtitle: "Calidad, Confianza, Seguridad ",
+                    title: "Solución",
+                    background: opcion2.src,
+                    paragraph: "",
+                    button: {
+                        text: "Información",
+                        link: "/infinite",
+                    },
+                },
+            ]}
+        />
+    </main>
+</Layout>
