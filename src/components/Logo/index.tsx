@@ -1,6 +1,6 @@
 import * as S from "./styled";
 import type { FC } from "react";
-import { Image } from "@static/images";
+import { Image} from "@static/images";
 /**
  * Logo is a text but if there is need to use img, add two img from <Image component
  * @import

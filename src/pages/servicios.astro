@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { HeroSlider3, InfiniteImg1, InfiniteImg2, opcion1, portada, desarrolloWeb, desarrollomovil, automatizacion, chatbot, consultoria, ecomerce, especialistas } from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+---
+
+<Layout
+    title="Cybernetic | Servicios"
+    description="YOUR META DESCRIPTION FOR SEO"
+>
+    <main class="page-content">
+        <Hero
+            heroType="ParallaxImage"
+            client:visible
+            data={{
+                image: portada.src,
+                content: {
+                    title: "Servicios",
+                    paragraph:
+                        "Ofrecemos desarrollo de software personalizado, desde aplicaciones móviles hasta soluciones empresariales, con eficiencia y calidad",
+                },
+            }}
+        />
+        <ServiceCards
+            description="Servicios"
+            title="El Soporte que Tenemos para Ti"
+            client:visible
+            cards={[
+                {
+                    title: "Desarrollo Web",
+                    description:
+                        "Creamos sitios web modernos, funcionales y adaptativos que se ajustan a tus necesidades y objetivos comerciales, garantizando una experiencia de usuario excepcional.",
+                    image: desarrolloWeb.src
+                },
+                {
+                    title: "Desarrollo Móvil",
+                    description:
+                        "Desarrollamos aplicaciones móviles intuitivas y eficientes para iOS y Android, adaptadas a tus requerimientos y diseñadas para ofrecer una excelente experiencia al usuario.",
+                    image: desarrollomovil.src
+                },
+                {
+                    title: "Software de Automatización",
+                    description:
+                        "Implementamos soluciones de software de automatización para optimizar tus procesos empresariales, aumentar la eficiencia y reducir costos operativos",
+                    image: automatizacion.src
+                },
+                {
+                    title: "Chatbots",
+                    description:
+                        "Desarrollamos chatbots inteligentes que mejoran la interacción con tus clientes, ofreciendo soporte inmediato y respuestas personalizadas las 24 horas del día.",
+                    image: chatbot.src
+                },
+                {
+                    title: "Consultoría Tecnológica",
+                    description:
+                        "Ofrecemos servicios de consultoría tecnológica para ayudarte a seleccionar las mejores herramientas y estrategias para tu proyecto.",
+                    image: consultoria.src
+                },
+                {
+                    title: "E-commerce",
+                    description:
+                        "Desarrollamos plataformas de comercio electrónico seguras y escalables que facilitan la venta de tus productos y servicios en línea",
+                    image: ecomerce.src
+                },
+            ]}
+        />
+
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                image: {
+                    src: especialistas.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                    
+                },
+                title: "¡Hagamos realidad tus ideas!",
+                paragraph:
+                    "Mejoramos con tigo y encaminamos tus proyectos tecnológicos hacia el éxito con el apoyo de nuestros especialistas.",
+            }}
+        />
+        
+    </main>
+    <Footer />
+</Layout>

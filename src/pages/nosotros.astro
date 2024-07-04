@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { especialistas, portada, apasionados, historia} from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+---
+
+<Layout
+    title="SchanauzerTech | Nosotros"
+    description="YOUR META DESCRIPTION FOR SEO"
+>
+    <main class="page-content">
+        <Hero
+            heroType="ParallaxImage"
+            client:visible
+            data={{
+                image: portada.src,
+                content: {
+                    title: "Nosotros",
+                    paragraph:
+                        "Somos un equipo de desarrollo de software comprometido con crear soluciones innovadoras y ofrecer soporte de calidad.",
+                },
+            }}
+        />
+        
+
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                image: {
+                    src: apasionados.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                    
+                },
+                title: "¡Apasionados por la tecnología!",
+                paragraph:
+                    "En Schnauzer Tech, la tecnología no es solo nuestra especialidad, ¡es nuestra pasión! Nos dedicamos a transformar ideas innovadoras en soluciones tecnológicas que potencian el éxito de nuestros clientes. Nuestra misión es mejorar contigo ofreciendote servicios y herramientas para que destaques frente a los demas",
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                switchPlaces: true,
+                image: {
+                    src:historia.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                    
+                },
+                title: "Nuestra Historia",
+                paragraph:
+                    "En Schnauzer Tech, fundada en 2021, un grupo de desarrolladores decidió apostar por jóvenes promesas del Perú con gran talento. Guiándolos en el mundo tecnológico y convirtiéndolos en destacados programadores, crecimos juntos. Así, seguimos evolucionando contigo.",
+            }}
+        />
+        
+
+    </main>
+    <Footer />
+</Layout>

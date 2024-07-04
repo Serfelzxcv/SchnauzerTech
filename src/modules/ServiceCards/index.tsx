@@ -11,6 +11,7 @@ type ServiceCards = {
     cards?: {
         title: string;
         description: string;
+        image: string;
     }[];
 };
 
@@ -29,6 +30,7 @@ export const ServiceCards: FC<ServiceCards> = ({
         return (
             <FadeIn key={index}>
                 <TextBox>
+                    <img src={card.image} alt={card.title} />
                     <h3>{card.title}</h3>
                     <p>{card.description}</p>
                 </TextBox>

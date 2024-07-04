@@ -10,6 +10,7 @@ export const ServiceCardsStyled = styled.section`
     margin: -43px 0 50px;
     z-index: 1;
     position: relative;
+    padding-bottom: 70px;
 `;
 
 export const ServiceCardsHeading = styled.div`
@@ -35,9 +36,12 @@ export const ServiceCardsHeading = styled.div`
 `;
 
 export const ServiceCardsGrid = styled.div`
+    background: ${Theme.cuaternary};
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    padding: 40px;
+    border-radius:20px;
 
     ${MediaQuery.max("lg")} {
         grid-template-columns: 1fr;
@@ -57,4 +61,14 @@ export const ServiceCardsGrid = styled.div`
         letter-spacing: -0.5px;
         opacity: 0.8;
     }
+    img {
+        width: 100%;
+        height: 150px;
+        
+        object-fit:cover;
+        margin-bottom: 10px;
+    }
+
+    
 `;
+

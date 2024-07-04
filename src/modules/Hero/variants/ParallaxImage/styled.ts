@@ -44,6 +44,7 @@ export const ParallaxImageContent = styled.div`
     width: 100%;
     position: relative;
     z-index: 1;
+    
 
     h1 {
         font-size: 90px;

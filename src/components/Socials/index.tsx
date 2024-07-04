@@ -8,7 +8,7 @@ export const Socials: FC = ({ ...rest }) => {
             <S.SocialsList>
                 <S.SocialsListItem>
                     <S.SocialsLink
-                        href="https://github.com"
+                        href="https://github.com/Serfelzxcv"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -18,7 +18,7 @@ export const Socials: FC = ({ ...rest }) => {
                 </S.SocialsListItem>
                 <S.SocialsListItem>
                     <S.SocialsLink
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/kevin-sebastian-carrillo-varas-275228281/"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -28,7 +28,7 @@ export const Socials: FC = ({ ...rest }) => {
                 </S.SocialsListItem>
                 <S.SocialsListItem>
                     <S.SocialsLink
-                        href="https://facebook.com"
+                        href="https://www.facebook.com/kevin.carrillovaras/?locale=es_LA"
                         target="_blank"
                         rel="noreferrer"
                     >

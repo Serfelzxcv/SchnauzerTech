@@ -15,14 +15,14 @@ export const Navigation: FC = () => {
                     </li>
                     <li>
                         <a
-                            href="https://codexcode.store/themes/cybernetic-website-template"
-                            target="_blank"
+                            href="/servicios"
+                            
                         >
                             Servicios
                         </a>
                     </li>
                     <li>
-                        <a href="/infinite">Nosotros</a>
+                        <a href="/nosotros">Nosotros</a>
                     </li>
                     <li>
                         <a href="/contact">Contáctenos</a>

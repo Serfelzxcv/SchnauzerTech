@@ -1,5 +1,5 @@
 ---
-import { HeroSlider1 } from "@static/images";
+import { portada,especialistas,schnauzertech} from "@static/images";
 import Layout from "../layouts/Layout.astro";
 import { Contact as ContactModule } from "@modules/Contact";
 import { Hero } from "@modules/Hero";
@@ -11,16 +11,33 @@ import { Footer } from "@modules/Footer";
     description="YOUR META DESCRIPTION FOR SEO"
 >
     <main class="page-content">
+        
         <Hero
             heroType="ParallaxImage"
             client:load
             data={{
-                image: HeroSlider1.src,
+                image: portada.src,
                 content: {
-                    title: "Contact",
+                    title: "Contacto",
                     paragraph:
-                        "Get stuck or need help? Contact us and we will help you out!",
+                        "¿Tienes algún problema o necesitas ayuda? ¡Contáctanos y te ayudaremos!",
                 },
+            }}
+        />
+        <Hero
+            heroType="textImage"
+            client:visible
+            data={{
+                image: {
+                    src: schnauzertech.src,
+                    width: 590,
+                    height: 300,
+                    alt: "Hero Image",
+                    
+                },
+                title: "¡Hagamos realidad tus ideas!",
+                paragraph:
+                    "Mejoramos con tigo y encaminamos tus proyectos tecnológicos hacia el éxito con el apoyo de nuestros especialistas.",
             }}
         />
         <ContactModule client:load />

@@ -13,13 +13,12 @@ export const Contact: FC = () => {
                             variant="background-text"
                             bgText="Phone"
                             boxAsLink={true}
-                            href="tel:+52 123 233 421"
+                            href="https://wa.me/51968879263 "
                             target="_blank"
                         >
-                            <h3>+52 123 233 421</h3>
+                            <h3>+51 968879263</h3>
                             <p>
-                                you can call me if you have any questions or
-                                just want to say hi
+                                Puedes llamarnos o escribirnos para cualquier duda o consulta y te atenderemos en la brevedad.
                             </p>
                         </TextBox>
                     </FadeIn>
@@ -28,24 +27,18 @@ export const Contact: FC = () => {
                             variant="background-text"
                             bgText="Email"
                             boxAsLink={true}
-                            href="mailto:youremail@gmail.com"
+                            href="mailto:schnauzertech.solutions@gmail.com"
                             target="_blank"
                         >
-                            <h3>youremail@gmail.com</h3>
+                            <h3>schnauzertech.solutions@gmail.com
+                            </h3>
                             <p>
-                                also you can write me an email if you have any
-                                questions
+                                Puedes enviarnos correo para cualquier duda o consulta
                             </p>
                         </TextBox>
                     </FadeIn>
                 </S.ContactBox>
-                <FadeIn delay={0.3}>
-                    <TextBox variant="background-text" bgText="Address">
-                        <h3>Address</h3>
-                        <p>Some street 123, 12345 City, Country</p>
-                        <p>Office: Mystr street 321, 54321 City, Country</p>
-                    </TextBox>
-                </FadeIn>
+                
             </S.ContainerStyled>
         </S.ContactStyled>
     );

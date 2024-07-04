@@ -3,6 +3,7 @@ import PreviewPng from "./preview.webp";
 import HeroImg from "./hero-img.webp";
 import Logo from "./logo.webp";
 
+
 import HeroSlider1 from "./hero-slider-01.webp";
 import HeroSlider2 from "./hero-slider-02.webp";
 import HeroSlider3 from "./hero-slider-03.webp";
@@ -12,6 +13,18 @@ import InfiniteImg2 from "./infinite-img-2.webp";
 
 import opcion1 from "./opcion1.jpg"
 import opcion2 from "./opcion2.jpg"
+import portada from "./portada.jpg"
+
+import desarrolloWeb from "./desarrolloweb.jpg"
+import desarrollomovil from "./desarrollomovil.jpg"
+import automatizacion from "./automatizacion.jpg"
+import chatbot from "./chatbot.jpg"
+import consultoria from "./consultoria.jpg"
+import ecomerce from "./ecomerce.webp"
+import especialistas from "./especialistas.jpg"
+import historia from "./historia.jpg"
+import apasionados from "./apasionados.jpg"
+import schnauzertech from "./Schnauzertech.jpg"
 
 export const images = {
     preview: PreviewPng,
@@ -74,5 +87,18 @@ export {
     InfiniteImg1,
     InfiniteImg2,
     opcion1,
-    opcion2
+    opcion2,
+    portada,
+
+    desarrolloWeb,
+    desarrollomovil,
+    automatizacion,
+    chatbot,
+    consultoria,
+    ecomerce,
+    especialistas,
+    historia,
+    apasionados,
+    schnauzertech
+
 };
